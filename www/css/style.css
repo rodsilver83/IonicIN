@@ -1,0 +1,262 @@
+/* Empty. Add your own CSS if you like */
+/* line 7, ../../compass/sass/style.scss */
+.scroll-content {
+  background-color: #333333;
+}
+
+/* line 10, ../../compass/sass/style.scss */
+.image-card {
+  background-position: center center;
+  background-size: cover;
+  float: left;
+  height: 110px;
+  width: 100%;
+}
+
+/* line 17, ../../compass/sass/style.scss */
+.title-card {
+  top: 4.6em !important;
+  color: white !important;
+  font-size: 1em !important;
+  height: 2em;
+  line-height: 1;
+  position: absolute;
+  text-align: left;
+  padding: 0.5em;
+  width: 100%;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 31, ../../compass/sass/style.scss */
+.button {
+  border-style: none;
+}
+
+/* line 34, ../../compass/sass/style.scss */
+.black-fade {
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 99%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(80%, rgba(0, 0, 0, 0.65)), color-stop(99%, rgba(0, 0, 0, 0.65)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 99%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 99%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 99%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.65) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  width: 100%;
+  height: 100%;
+}
+
+/* line 45, ../../compass/sass/style.scss */
+.entrada {
+  width: 100%;
+  background-color: #ffffff;
+  height: 0px;
+  float: left;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 54, ../../compass/sass/style.scss */
+.entradaIn {
+  height: 100px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 60, ../../compass/sass/style.scss */
+.entrada-container {
+  height: 100px;
+}
+
+/* line 63, ../../compass/sass/style.scss */
+.entrada p {
+  height: auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 0 1em;
+  text-align: left;
+  white-space: normal;
+  width: 100%;
+}
+
+/* line 72, ../../compass/sass/style.scss */
+.more {
+  color: #00838b;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.7em;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 83, ../../compass/sass/style.scss */
+.entradaIn + .more {
+  opacity: 1;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 90, ../../compass/sass/style.scss */
+.tabs-hide .tabs {
+  display: none;
+}
+
+/* line 94, ../../compass/sass/style.scss */
+.bar-footer.has-tabs {
+  bottom: 0;
+}
+
+/* line 97, ../../compass/sass/style.scss */
+.has-footer.has-tabs {
+  bottom: 44px;
+}
+
+/* line 100, ../../compass/sass/style.scss */
+.has-tabs, .bar-footer.has-tabs {
+  bottom: 0px;
+}
+
+/* line 104, ../../compass/sass/style.scss */
+.login-container {
+  background: #a2cbe2;
+  background: -moz-linear-gradient(top, #a2cbe2 0%, #679abf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a2cbe2), color-stop(100%, #679abf));
+  background: -webkit-linear-gradient(top, #a2cbe2 0%, #679abf 100%);
+  background: -o-linear-gradient(top, #a2cbe2 0%, #679abf 100%);
+  background: -ms-linear-gradient(top, #a2cbe2 0%, #679abf 100%);
+  background: linear-gradient(to bottom, #a2cbe2 0%, #679abf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2cbe2', endColorstr='#679abf',GradientType=0 );
+  width: 100%;
+  height: 100%;
+}
+
+/* line 117, ../../compass/sass/style.scss */
+.center {
+  text-align: center;
+}
+
+/* line 120, ../../compass/sass/style.scss */
+.login-text {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: initial;
+}
+
+/* line 127, ../../compass/sass/style.scss */
+.item-input {
+  align-items: center;
+  border: 0 none;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  padding: 6px 0 5px 16px;
+  position: relative;
+  text-align: center;
+}
+
+/* line 138, ../../compass/sass/style.scss */
+input[type="text"] {
+  color: #6EA1C4;
+  text-align: center;
+}
+/* line 61, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-moz-placeholder {
+  color: #6EA1C4;
+}
+/* line 64, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-moz-placeholder {
+  color: #6EA1C4;
+}
+/* line 67, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-ms-input-placeholder {
+  color: #6EA1C4;
+}
+/* line 56, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-webkit-input-placeholder {
+  color: #6EA1C4;
+}
+
+/* line 145, ../../compass/sass/style.scss */
+.checkbox input:before, .checkbox-icon:before {
+  border-radius: 10px;
+  background-color: #76C3E6;
+  border-style: none;
+}
+
+/* line 151, ../../compass/sass/style.scss */
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+  border-radius: 10px;
+  background-color: #76C3E6;
+  border-style: none;
+}
+
+/* line 156, ../../compass/sass/style.scss */
+.item-checkbox {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-size: 0.8em;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* line 164, ../../compass/sass/style.scss */
+.login-button {
+  background-color: #76c3e6 !important;
+  border-radius: 15px;
+  margin-top: 5%;
+  padding: 0 8%;
+}
