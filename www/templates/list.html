@@ -1,18 +1,18 @@
 <ion-view>
   <ion-header-bar class="bar-dark">
-    <button class="button icon ion-ios7-arrow-back"></button>
+    <button class="button icon ion-ios7-arrow-back" on-tap="back()"></button>
     <h1 class="title">InterNews</h1>
     <button class="button icon ion-navicon-round"></button>
   </ion-header-bar>
-  <ion-content ng-controller="ListCtrl">
+  <ion-content>
     <div class="item item-image" ng-repeat="noticia in noticias" ng-init="noticia.touch=false">
-      <div on-tap="noticia.touch=!noticia.touch" class="image-card" style="background-image: url('{{noticia.IMAGEN}}')">
+      <div on-tap="noticia.touch=!noticia.touch" class="image-card" style="background-image: url('{{noticia.IMAGEN_ENTRADA}}')">
         <div class="black-fade"></div>
         <p class="title-card">{{noticia.TITULO}}</p>
       </div>
       <div class="entrada-container">
         <div class="entrada" ng-class="{entradaIn: noticia.touch}" ng-bind-html="noticia.ENTRADA"></div>
-        <div class="more">Ver Mas ...</div>
+        <div class="more" ui-sref="app.detail({noticia: $index})">Ver Mas ...</div>
       </div>
     </div>
   </ion-content>

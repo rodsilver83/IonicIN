@@ -260,3 +260,52 @@ input[type="text"]::-webkit-input-placeholder {
   margin-top: 5%;
   padding: 0 8%;
 }
+
+/* line 170, ../../compass/sass/style.scss */
+.detail-contentainer {
+  background-color: #ffffff;
+  color: #616161;
+}
+
+/* line 174, ../../compass/sass/style.scss */
+.detail-content {
+  padding: 0 10px;
+}
+
+/* line 177, ../../compass/sass/style.scss */
+.detail-title {
+  font-size: 1.7em;
+  line-height: 1.1em;
+  padding: 0 10px;
+}
+
+/* line 182, ../../compass/sass/style.scss */
+.modal {
+  background-color: transparent;
+}
+
+/* line 185, ../../compass/sass/style.scss */
+.modal-title {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* line 190, ../../compass/sass/style.scss */
+.modal-container {
+  background-color: #8e8e8e;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40%;
+}
+
+/* line 196, ../../compass/sass/style.scss */
+.modal-row {
+  padding: 1px;
+  font-size: 0.8em;
+}
+
+/* line 200, ../../compass/sass/style.scss */
+.modal-button {
+  font-size: 0.8em;
+}

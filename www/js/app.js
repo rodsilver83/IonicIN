@@ -9,7 +9,6 @@ var app = angular.module('starter', ['ionic','ui.router','ngCordova','app.contro
 
 .run(function($ionicPlatform,$cordovaSplashscreen) {
   $ionicPlatform.ready(function() {
-
     $cordovaSplashscreen.show();
     setTimeout(function() {
       $cordovaSplashscreen.hide()
@@ -103,6 +102,21 @@ var app = angular.module('starter', ['ionic','ui.router','ngCordova','app.contro
         list: {
           templateUrl: 'templates/list.html',
           controller: 'ListCtrl'        }
+      }
+    })
+
+    $stateProvider.state('app.detail', {
+      url: '/detail/:noticia',
+      views: {
+        detail: {
+          templateUrl: 'templates/detail.html',
+          controller: 'DetailCtrl'
+        }
+      },
+      resolve: {
+        noticia: function($stateParams, NewsService) {
+          return NewsService.setNoticia($stateParams.noticia);
+        }
       }
     })
 

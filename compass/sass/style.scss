@@ -167,3 +167,36 @@ input[type="text"]{
   margin-top: 5%;
   padding: 0 8%;
 }
+.detail-contentainer{
+  background-color: #ffffff;
+  color: #616161;
+}
+.detail-content{
+  padding: 0 10px;
+}
+.detail-title{
+  font-size: 1.7em;
+  line-height: 1.1em;
+  padding: 0 10px;
+}
+.modal{
+  background-color: transparent;
+}
+.modal-title{
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+}
+.modal-container{
+  background-color: #8e8e8e;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40%;
+}
+.modal-row{
+  padding: 1px;
+  font-size: 0.8em;
+}
+.modal-button{
+  font-size: 0.8em;
+}

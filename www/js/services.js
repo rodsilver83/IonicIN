@@ -2,6 +2,7 @@ angular.module('app.services', [])
   .service('NewsService', ['$rootScope', '$timeout', '$http', function($rootScope, $timeout, $http) {
     var news = {};
     var user = {};
+    var index = 0;
 
     return {
       loadNews: function(){
@@ -16,10 +17,14 @@ angular.module('app.services', [])
           method: "GET"
         });
       },
-      user: user,
-      news: news,
-      getNews: function (index) {
-        return news[index]
+      user: this.user,
+      news: this.news,
+      getNoticia: function () {
+        return this.news[this.index]
+      },
+      setNoticia: function(index){
+        this.index = index;
+        return this.news[index]
       }
     }
   }])
