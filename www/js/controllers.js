@@ -22,7 +22,6 @@ angular.module('app.controllers', [])
       if(!$scope.userStored.remember){
         $state.go('app.login.index');
         $scope.remember = $scope.userStored.remember;
-        console.log('STORE:',JSON.stringify($scope.userStored));
       }
     }
 
@@ -44,8 +43,14 @@ angular.module('app.controllers', [])
   }])
 
   .controller('ListCtrl',['$scope','$http','$state','$ionicModal','NewsService',function($scope, $http, $state,$ionicModal, NewsService){
+
+    $scope.topsubmenu = false;
     $scope.user = NewsService.user;
     $scope.noticias = NewsService.news;
+
+    $scope.submenu = function(){
+      $scope.topsubmenu = !$scope.topsubmenu;
+    }
 
     $ionicModal.fromTemplateUrl('templates/loginmodal.html', {
       scope: $scope,

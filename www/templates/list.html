@@ -2,9 +2,10 @@
   <ion-header-bar class="bar-dark">
     <button class="button icon ion-ios7-arrow-back" on-tap="back()"></button>
     <h1 class="title">InterNews</h1>
-    <button class="button icon ion-navicon-round"></button>
+    <button class="button icon ion-navicon-round" on-tap="submenu()"></button>
   </ion-header-bar>
   <ion-content>
+    <top-submenu topsubmenu="topsubmenu" onclose="openModal()"></top-submenu>
     <div class="item item-image" ng-repeat="noticia in noticias" ng-init="noticia.touch=false">
       <div on-tap="noticia.touch=!noticia.touch" class="image-card" style="background-image: url('{{noticia.IMAGEN_ENTRADA}}')">
         <div class="black-fade"></div>

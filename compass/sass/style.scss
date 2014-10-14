@@ -200,3 +200,29 @@ input[type="text"]{
 .modal-button{
   font-size: 0.8em;
 }
+.top-submenu{
+  background-color: #4d5150;
+  color: white;
+  font-size: 20px;
+  height: 0px;
+  text-align: center;
+  width: 100%;
+  @include transition-property(all);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in);
+}
+.topSubmenuShow{
+  height: 70px;
+  @include transition-property(all);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in);
+}
+.close-button{
+  background-color: #404140;
+  font-size: 0.8em;
+  height: 33px;
+  padding: 5px !important;
+}
+.close-button > p{
+  width: 100%;
+}

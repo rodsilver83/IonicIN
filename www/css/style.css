@@ -309,3 +309,55 @@ input[type="text"]::-webkit-input-placeholder {
 .modal-button {
   font-size: 0.8em;
 }
+
+/* line 203, ../../compass/sass/style.scss */
+.top-submenu {
+  background-color: #4d5150;
+  color: white;
+  font-size: 20px;
+  height: 0px;
+  text-align: center;
+  width: 100%;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 214, ../../compass/sass/style.scss */
+.topSubmenuShow {
+  height: 70px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 220, ../../compass/sass/style.scss */
+.close-button {
+  background-color: #404140;
+  font-size: 0.8em;
+  height: 33px;
+  padding: 5px !important;
+}
+
+/* line 226, ../../compass/sass/style.scss */
+.close-button > p {
+  width: 100%;
+}
