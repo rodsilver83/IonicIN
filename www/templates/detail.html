@@ -1,0 +1,15 @@
+<ion-view >
+  <ion-header-bar class="bar-dark">
+    <button class="button icon ion-ios7-arrow-back" on-tap="back()"></button>
+    <h1 class="title">InterNews</h1>
+    <button class="button icon ion-navicon-round"></button>
+  </ion-header-bar>
+  <ion-content class="detail-contentainer">
+    <img src="{{noticia.IMAGEN}}" width="100%">
+    <p class="detail-title">{{noticia.TITULO_INTERNO}}</p>
+    <div class="detail-content" ng-bind-html="noticia.CONTENIDO"></div>
+  </ion-content>
+  <ion-footer-bar class="bar bar-footer bar-dark">
+    <h1 class="title">{{user.first_name+' '+user.last_name}}</h1>
+  </ion-footer-bar>
+</ion-view>
