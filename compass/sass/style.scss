@@ -207,12 +207,14 @@ input[type="text"]{
   height: 0px;
   text-align: center;
   width: 100%;
+  opacity: 0;
   @include transition-property(all);
   @include transition-duration(0.3s);
   @include transition-timing-function(ease-in);
 }
 .topSubmenuShow{
   height: 70px;
+  opacity: 1;
   @include transition-property(all);
   @include transition-duration(0.3s);
   @include transition-timing-function(ease-in);
@@ -225,4 +227,11 @@ input[type="text"]{
 }
 .close-button > p{
   width: 100%;
+}
+
+.show-nav-button{
+  display: block !important;
+}
+.tabs{
+  display: none !important;
 }

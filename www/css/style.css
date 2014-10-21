@@ -318,6 +318,7 @@ input[type="text"]::-webkit-input-placeholder {
   height: 0px;
   text-align: center;
   width: 100%;
+  opacity: 0;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -332,9 +333,10 @@ input[type="text"]::-webkit-input-placeholder {
   transition-timing-function: ease-in;
 }
 
-/* line 214, ../../compass/sass/style.scss */
+/* line 215, ../../compass/sass/style.scss */
 .topSubmenuShow {
   height: 70px;
+  opacity: 1;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -349,7 +351,7 @@ input[type="text"]::-webkit-input-placeholder {
   transition-timing-function: ease-in;
 }
 
-/* line 220, ../../compass/sass/style.scss */
+/* line 222, ../../compass/sass/style.scss */
 .close-button {
   background-color: #404140;
   font-size: 0.8em;
@@ -357,7 +359,17 @@ input[type="text"]::-webkit-input-placeholder {
   padding: 5px !important;
 }
 
-/* line 226, ../../compass/sass/style.scss */
+/* line 228, ../../compass/sass/style.scss */
 .close-button > p {
   width: 100%;
+}
+
+/* line 232, ../../compass/sass/style.scss */
+.show-nav-button {
+  display: block !important;
+}
+
+/* line 235, ../../compass/sass/style.scss */
+.tabs {
+  display: none !important;
 }

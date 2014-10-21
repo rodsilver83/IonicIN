@@ -20,7 +20,7 @@ angular.module('app.controllers', [])
 
     function checkLogin(){
       if(!$scope.userStored.remember){
-        $state.go('app.login.index');
+        $state.go('app.login');
         $scope.remember = $scope.userStored.remember;
       }
     }
@@ -42,11 +42,16 @@ angular.module('app.controllers', [])
     }
   }])
 
-  .controller('ListCtrl',['$scope','$http','$state','$ionicModal','NewsService',function($scope, $http, $state,$ionicModal, NewsService){
+  .controller('ListCtrl',['$scope','$http','$state','$ionicModal','NewsService',
+    function($scope, $http, $state,$ionicModal, NewsService,RequestCache){
 
     $scope.topsubmenu = false;
     $scope.user = NewsService.user;
-    $scope.noticias = NewsService.news;
+    //$scope.noticias = RequestCache.get('frontpage/1');;
+      $http.get('http://webadmin.tapp.q-ark.mx/api/internews/noticias').then(function(res){
+        console.log('DATA:',);
+        $scope.noticias = res.data;
+      });
 
     $scope.submenu = function(){
       $scope.topsubmenu = !$scope.topsubmenu;
@@ -68,7 +73,7 @@ angular.module('app.controllers', [])
       if(session){
         $scope.user.remember = false;
         window.localStorage['user'] = JSON.stringify($scope.user);
-        $state.go('app.login.index');
+        $state.go('app.login');
       }
     };
 

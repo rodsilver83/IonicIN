@@ -1,55 +1,58 @@
-<ion-content ng-controller="LoginCtrl" class="login-container">
-  <div class="row">
-    <div class="col center">
-      <img src="img/icon.png" width="254">
+<ion-view>
+  <ion-content ng-controller="LoginCtrl" class="login-container">
+    <div class="row">
+      <div class="col center">
+        <img src="img/icon.png" width="254">
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col center">
-      <span ng-show="msg">{{msg}}</span>
+    <div class="row">
+      <div class="col center">
+        <span ng-show="msg">{{msg}}</span>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-80 col-offset-10 center">
-      <label class="item item-input">
-        <input ng-model="username" type="text" placeholder="Ingresa tu correo">
-      </label>
+    <div class="row">
+      <div class="col-80 col-offset-10 center">
+        <label class="item item-input">
+          <input ng-model="username" type="text" placeholder="Ingresa tu correo">
+        </label>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col center">
-      <button class="button button-positive login-button" on-tap="doLogin()">
-        Iniciar sesión
-      </button>
+    <div class="row">
+      <div class="col center">
+        <button class="button button-positive login-button" on-tap="doLogin()">
+          Iniciar sesión
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-60 col-offset-20 center">
-      <div class="item item-checkbox">
-        <div>
-          <label class="checkbox">
-            <input type="checkbox" ng-model="remember">
-          </label>
-          Recordar inicio de sesión
+    <div class="row">
+      <div class="col-60 col-offset-20 center">
+        <div class="item item-checkbox">
+          <div>
+            <label class="checkbox">
+              <input type="checkbox" ng-model="remember">
+            </label>
+            Recordar inicio de sesión
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col center">
-      <p class="login-text">
-        Todo lo que necesitas<br>
-        saber del día a día<br>
-        del mercado y de tu<br>
-        empresa en 5 minutos.
+    <div class="row">
+      <div class="col center">
+        <p class="login-text">
+          Todo lo que necesitas<br>
+          saber del día a día<br>
+          del mercado y de tu<br>
+          empresa en 5 minutos.
 
-      </p>
+        </p>
+      </div>
     </div>
-  </div>
 
 
-</ion-content>
+  </ion-content>
+
+</ion-view>
