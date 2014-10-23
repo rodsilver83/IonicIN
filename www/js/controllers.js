@@ -73,7 +73,7 @@ angular.module('app.controllers', [])
     };
 
     $scope.$on('$destroy', function() {
-      $scope.modal.remove();
+      //$scope.modal.remove();
     });
 
     $scope.detail = function($index){

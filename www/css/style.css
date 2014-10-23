@@ -116,7 +116,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0.7em;
+  padding: 0 0.7em;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;

@@ -75,7 +75,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0.7em;
+  padding: 0 0.7em;
   @include transition-property(all);
   @include transition-duration(0.3s);
   @include transition-timing-function(ease-in);
