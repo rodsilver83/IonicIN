@@ -1,0 +1,27 @@
+<ion-view>
+  <ion-header-bar class="bar-dark">
+    <button class="button icon ion-ios7-arrow-back" on-tap="back()"></button>
+    <h1 class="title">InterNews</h1>
+    <!--
+    <button class="button icon ion-navicon-round" on-tap="submenu()"></button>
+    -->
+  </ion-header-bar>
+  <ion-content>
+    <!--
+    <top-submenu topsubmenu="topsubmenu" onclose="openModal()"></top-submenu>
+    -->
+    <div class="item item-image" ng-repeat="noticia in noticias" ng-init="noticia.touch=false">
+      <div on-tap="noticia.touch=!noticia.touch" class="image-card" style="background-image: url('{{noticia.IMAGEN_ENTRADA}}')">
+        <div class="black-fade"></div>
+        <p class="title-card">{{noticia.TITULO}}</p>
+      </div>
+      <div class="entrada-container">
+        <div class="entrada" ng-class="{entradaIn: noticia.touch}" ng-bind-html="noticia.ENTRADA"></div>
+        <div class="more" ui-sref="app.detail({noticia: $index})">Ver Mas ...</div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar bar-footer bar-dark">
+    <h1 class="title">{{user.first_name+' '+user.last_name}}</h1>
+  </ion-footer-bar>
+</ion-view>
